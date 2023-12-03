@@ -1,5 +1,5 @@
 import { useTexture } from '@react-three/drei';
-import { useFrame, useThree } from '@react-three/fiber';
+import { useFrame } from '@react-three/fiber';
 import React, { useRef, useCallback, useState, useEffect } from 'react';
 import Moon from './moon';
 import { Clock } from 'three';
@@ -10,11 +10,11 @@ interface EarthProps {
 }
 
 const Earth: React.FC<EarthProps> = React.memo(({ displacementScale }) => {
-  const earthRef = useRef<THREE.Mesh>(null);
+  const earthRef = useRef<THREE.Object3D>(null);
   const earthRefTwo = useRef<THREE.Vector3>(new THREE.Vector3(8, 0, 0));
   const clock = useRef<Clock>(new THREE.Clock());
   const [hovered, setHovered] = useState(false);
-  const { camera } = useThree();
+  //const { camera } = useThree();
   
 
   const [earthTexture, earthNormalMap, earthDisplacementMap, earthSpecularMap, earthEmissiveMap] = useTexture([
@@ -40,20 +40,20 @@ const Earth: React.FC<EarthProps> = React.memo(({ displacementScale }) => {
     document.body.style.cursor = hovered ? 'pointer' : 'auto';
   }, [hovered]);
 
-  const setCameraPosition = (position: THREE.Vector3) => {
-    camera.position.copy(position);
-  };
+  //const setCameraPosition = (position: THREE.Vector3) => {
+  //  camera.position.copy(position);
+  //};
 
   useFrame(() => {
     updateEarthPosition();
   });
 
-  useEffect(() => {
-    const earthPositionRef = earthRef.current?.position;
-  }, []);
+  //useEffect(() => {
+  //  const earthPositionRef = earthRef.current?.position;
+  //}, []);
 
   return (
-    <group ref={earthRef}>
+    <group ref={(earthRef as unknown) as React.Ref<THREE.Group>}>
       <mesh castShadow receiveShadow onPointerOver={() => setHovered(true)} onPointerOut={() => setHovered(false)}>
         <sphereGeometry args={[1.5, 32, 32]} />
         <meshPhongMaterial

@@ -1,9 +1,6 @@
 import { useTexture } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import React, { useRef, useCallback } from "react";
-import ISS from "./ISS";
-import Moon from "./moon";
-import Earth from "./earth";
 
 
 
