@@ -1,0 +1,343 @@
+.container{
+    background-color: #b4d3b2;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+.title{
+    position: absolute;
+    height: 100px;
+    width: 250px;
+    left: 27%;
+    top: 10%;
+    background-color: #1f801f;
+    box-shadow: 0 0 10px rgba(2, 2, 139, 0.5);
+    border: 2px solid  #eef2ee;
+    opacity: 0.8;
+    align-items: center;
+}
+
+.ttext{
+    margin-top: 0;
+    color: #faf9f4;
+    font-size: 3vw;
+    font-family: CustomFontName;
+}
+
+@font-face {
+    font-family: 'CustomFontName';
+    src: url('public/AmaticSC-Regular.ttf') format('truetype');
+    /* Add additional src lines for different font file formats */
+  }
+
+
+
+.peacock {
+    transform: translate(-50%, -50%);
+    left: 70%;
+    top: 50%;
+    align-items: center;
+    position: absolute;
+    height: 190px;
+    width: 130px;
+}
+
+.body {
+    width: 130px;
+    height: 130px;
+    border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
+    border: 2px solid black;
+    transform: rotate(-45deg);
+    background-color: #0000CD;
+    box-shadow: 0 0 15px rgb(2, 19, 255);
+    position: absolute; /* Change fixed to absolute */
+    top: 100%; /* Adjust the top value as needed */
+    left: 0px; /* Adjust the left value as needed */
+}
+
+.head {
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+    position: absolute; /* Change relative to absolute */
+    border-radius: 80% 0 55% 50% / 55% 0 80% 50%;
+    background-color: #0000CD;
+    transform: rotate(135deg);
+    box-shadow: 0 0 15px rgb(2, 19, 255);
+    top: 90px; /* Adjust the top value as needed */
+    left: 41px; /* Adjust the left value as needed */
+}
+
+
+.feather-1{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top:27%;
+    left: 67.5%;
+    width: 80px;
+    height: 80px;
+    border-radius: 0 60px;
+    background-color: #1f801f;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transform: rotate(225deg);
+    border: 1px solid  #074707;
+}
+
+.feather-2{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top:33%;
+    left: 75%;
+    width: 80px;
+    height: 80px;
+    border-radius: 0 60px;
+    background-color: #1f801f;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transform: rotate(270deg);
+    border: 1px solid  #074707;
+}
+
+.feather-3{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top:33%;
+    left: 60%;
+    width: 80px;
+    height: 80px;
+    border-radius: 0 60px;
+    background-color: #1f801f;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transform: rotate(180deg);
+    border: 1px solid  #074707;
+}
+
+.feather-4{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top:50%;
+    left: 75%;
+    width: 80px;
+    height: 80px;
+    border-radius: 0 60px;
+    background-color: #1f801f;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transform: rotate(275deg);
+    border: 1px solid  #074707;
+}
+
+.feather-5{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top:50%;
+    left: 60%;
+    width: 80px;
+    height: 80px;
+    border-radius: 0 60px;
+    background-color: #1f801f;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transform: rotate(175deg);
+    border: 1px solid  #074707;
+}
+
+.feather-6{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top:65%;
+    left: 78%;
+    width: 80px;
+    height: 80px;
+    border-radius: 0 60px;
+    background-color: #1f801f;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transform: rotate(300deg);
+    border: 1px solid  #074707;
+}
+
+.feather-7{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top:65%;
+    left: 57%;
+    width: 80px;
+    height: 80px;
+    border-radius: 0 60px;
+    background-color: #1f801f;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transform: rotate(150deg);
+    border: 1px solid  #074707;
+}
+
+
+.feather-8{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top:51%;
+    left: 83%;
+    width: 80px;
+    height: 80px;
+    border-radius: 0 60px;
+    background-color: #1f801f;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transform: rotate(290deg);
+    border: 1px solid  #074707;
+}
+
+.feather-9{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top:51%;
+    left: 52%;
+    width: 80px;
+    height: 80px;
+    border-radius: 0 60px;
+    background-color: #1f801f;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transform: rotate(160deg);
+    border: 1px solid  #074707;
+}
+
+.feather-10{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top:35%;
+    left: 83%;
+    width: 80px;
+    height: 80px;
+    border-radius: 0 60px;
+    background-color: #1f801f;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transform: rotate(275deg);
+    border: 1px solid  #074707;
+}
+
+.feather-11{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top:35%;
+    left: 52%;
+    width: 80px;
+    height: 80px;
+    border-radius: 0 60px;
+    background-color: #1f801f;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transform: rotate(175deg);
+    border: 1px solid  #074707;
+}
+
+.feather-12{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top:18%;
+    left: 73%;
+    width: 80px;
+    height: 80px;
+    border-radius: 0 60px;
+    background-color: #1f801f;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transform: rotate(240deg);
+    border: 1px solid  #074707;
+}
+
+.feather-13{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top:18%;
+    left: 62%;
+    width: 80px;
+    height: 80px;
+    border-radius: 0 60px;
+    background-color: #1f801f;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transform: rotate(210deg);
+    border: 1px solid  #074707;
+}
+
+.feather-14{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top:20%;
+    left: 81%;
+    width: 80px;
+    height: 80px;
+    border-radius: 0 60px;
+    background-color: #1f801f;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transform: rotate(270deg);
+    border: 1px solid  #074707;
+}
+
+.feather-15{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top:20%;
+    left: 54%;
+    width: 80px;
+    height: 80px;
+    border-radius: 0 60px;
+    background-color: #1f801f;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transform: rotate(180deg);
+    border: 1px solid  #074707;
+}
+
+.feather-16{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top:7%;
+    left: 67.5%;
+    width: 80px;
+    height: 80px;
+    border-radius: 0 60px;
+    background-color: #1f801f;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transform: rotate(225deg);
+    border: 1px solid  #074707;
+}
+
+.feather-1, .feather-2, .feather-3,.feather-4, .feather-5, .feather-6, .feather-7, .feather-8, .feather-9, .feather-10,.feather-11, .feather-12, .feather-13, .feather-14,.feather-15, .feather-16 {
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 0 15px rgba(4, 100, 31, 0.5);
+    opacity: 1.0;
+  }
+
+  .feather-1:hover, .feather-2:hover, .feather-3:hover, .feather-4:hover, .feather-5:hover, .feather-6:hover, .feather-7:hover, .feather-8:hover, .feather-9:hover, .feather-10:hover, .feather-11:hover, .feather-12:hover, .feather-13:hover, .feather-14:hover, .feather-15:hover, .feather-16:hover {
+    width: 90px;
+    height: 90px;
+    box-shadow: 0 0 65px rgba(4, 100, 31, 0.5);
+}
+
+.outside-inside{
+    width: 60px;
+    height: 60px;
+    border-radius: 0 60px;
+    background-color: rgb(0, 98, 255);
+    border: 0px solid  #02028b;
+    opacity: 0.8;
+}
+
+.inside{
+    width: 50px;
+    height: 50px;
+    border-radius: 0 60px;
+    background-color: black;
+    opacity: 1;
+}
+
+.deeper-inside{
+    width: 30px;
+    height: 30px;
+    border-radius: 0 60px;
+    background-color:  #074707;
+    box-shadow: 0 0 0px rgba(4, 100, 31, 0.5);
+    opacity: 0.5;
+}
+
+
