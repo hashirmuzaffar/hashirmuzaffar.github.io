@@ -1,0 +1,37 @@
+{
+  "name": "hashirmuzaffar",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "homepage": "https://hashirmuzaffar.github.io/hashirmuzaffar.github.io",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.74.16",
+    "@react-three/fiber": "^8.13.3",
+    "@tweenjs/tween.js": "^21.0.0",
+    "animate.css": "^4.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "three": "^0.153.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.37",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.38.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "gh-pages": "^6.1.0",
+    "typescript": "^5.4.3",
+    "vite": "^4.3.9"
+  }
+}

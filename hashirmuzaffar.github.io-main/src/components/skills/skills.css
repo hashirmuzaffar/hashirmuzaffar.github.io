@@ -1,0 +1,52 @@
+body{
+    background-color: black;
+}
+
+.sun {
+    position: absolute;
+    top: 45%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    animation: sun-rotate 10s linear infinite;
+  }
+  
+  .sun-glow {
+    position: absolute;
+    top: 21%;
+    left: 36%;
+    height: 3vw;
+    width: 3vw;
+    transform: translate(-50%, -50%);
+    animation: -webkit-sunglow 10s linear infinite;
+    animation: sunglow 10s linear infinite;
+  }
+  
+  @keyframes sunglow {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  
+  @keyframes sun-rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  
+  @-webkit-keyframes sunglow {
+    0% {
+      -webkit-transform: rotateZ(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(-360deg);
+    }
+  }
+  
+
+ 

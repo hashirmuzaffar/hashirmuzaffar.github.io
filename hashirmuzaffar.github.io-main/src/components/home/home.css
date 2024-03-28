@@ -1,0 +1,72 @@
+
+body{
+    /*background-color: #F0DEFD;*/
+	background-color: #FF00FF;
+}
+
+.link{
+    color: #504e4e; /* Replace with your desired color */
+    text-decoration: none; /* Optional: Remove underline */
+  }
+
+.container{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	display: flex;
+}
+
+.image-container {
+	overflow: hidden;
+}
+
+.cropped-image {
+	display: flex;
+	justify-content: center; /* Horizontal alignment: center */
+	align-items: center; /* Vertical alignment: center */
+	object-fit: cover;
+	object-position: top;
+	transition: transform 0.0s ease, object-position 0.01s ease; /* Adjust the transition timing */
+}
+
+.cropped-image:hover {
+	object-position: bottom;
+	transition-delay: 0s;
+}
+
+.cropped-image:not(:hover) {
+	transition: transform 2s ease, object-position 2s ease;
+	transition-delay: 2s;
+}
+
+.container-2{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container-3{
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    text-align: center;
+}
+
+
+@font-face {
+    font-family: 'CustomFontName';
+    src: url('public/AmaticSC-Regular.ttf') format('truetype');
+    /* Add additional src lines for different font file formats */
+  }
+
+.bodytext{
+    color: #504e4e;
+    font-size: 3vw;
+    font-family: CustomFontName;
+ 
+}
